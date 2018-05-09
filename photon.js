@@ -39,7 +39,8 @@
         // If the property contains a valid component
         if (property && property[componentSymbol]) {
           // Get the compontents full path
-          let componentBaseDir = (this.__baseDir || __dirname + "/") + components[key];
+          // let componentBaseDir = (this.__baseDir || __dirname + "/") + components[key];
+          let componentBaseDir = 'node_modules/electron-photon' + "/" + components[key];
           // Get the stylesheet's full path
           let styleSheetPath = componentBaseDir + "/styles/" + styleName + ".css";
           // Make posix path working on non-unix systems
